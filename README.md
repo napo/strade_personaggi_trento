@@ -14,3 +14,5 @@ Questo ha anche permesso di aggiornare la toponomastica di Trento su openstreetm
 L'elenco e le geometrie delle strade dedicate a uomini e donne sono disponibili a questi link:
 
 Si tratta di dati derivati da openstreetmap pertanto rilasciati con licenza [ODbL](http://opendatacommons.org/licenses/odbl/) 
+
+![screenshot](https://github.com/napo/strade_personaggi_trento/blob/master/img/screenshot.png?raw=true)
