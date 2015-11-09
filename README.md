@@ -15,7 +15,7 @@ L'elenco e le geometrie delle strade dedicate a uomini e donne sono disponibili 
 
 * [elenco strade dedicate a donne](https://github.com/napo/strade_personaggi_trento/blob/master/data/donne.geojson)
 * [elenco strade dedicate a uomini](https://github.com/napo/strade_personaggi_trento/blob/master/data/uomini.geojson)
-*
+
 Si tratta di dati derivati da openstreetmap pertanto rilasciati con licenza [ODbL](http://opendatacommons.org/licenses/odbl/) 
 
 ![screenshot](https://github.com/napo/strade_personaggi_trento/blob/master/img/screenshot.png?raw=true)
