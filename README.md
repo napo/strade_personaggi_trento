@@ -13,9 +13,13 @@ I dati sono stati elaborati a partire da quelli di openstreetmap in confronto co
 Questo ha anche permesso di aggiornare la toponomastica di Trento su openstreetmap.
 L'elenco e le geometrie delle strade dedicate a uomini e donne sono disponibili a questi link:
 
-* [elenco strade dedicate a donne](https://github.com/napo/strade_personaggi_trento/blob/master/data/donne.geojson)
-* [elenco strade dedicate a uomini](https://github.com/napo/strade_personaggi_trento/blob/master/data/uomini.geojson)
+- [geojson strade dedicate a donne a Trento](https://raw.githubusercontent.com/napo/strade_personaggi_trento/master/data/dati_donne.geojson)
+- [geojson strade dedicate a uomini a Trento](https://raw.githubusercontent.com/napo/strade_personaggi_trento/master/data/dati_uomini.geojson)
+- [csv elenco strade di Trento](https://raw.githubusercontent.com/napo/strade_personaggi_trento/master/data/stradario_trento.csv)
+- [csv elenco strade di Trento dedicate a donne](https://raw.githubusercontent.com/napo/strade_personaggi_trento/master/data/donne.csv)
+- [csv elenco strade di Trento dedicate a uomini](https://raw.githubusercontent.com/napo/strade_personaggi_trento/master/data/uomini.csv)
 
-Si tratta di dati derivati da openstreetmap pertanto rilasciati con licenza [ODbL](http://opendatacommons.org/licenses/odbl/) 
+I dati in formato geojson sono dati derivati da openstreetmap pertanto rilasciati con licenza ODbL
+I restanti in CC0
 
 ![screenshot](https://github.com/napo/strade_personaggi_trento/blob/master/img/screenshot.png?raw=true)
