@@ -176,7 +176,7 @@ I restanti in <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</
 
 	<div id="legend">
 		<h4>toponomastica di donne e uomini a Trento</h4>
-			<p>Una piccola dei nomi delle strade dedicati a uomini e donne a Trento<br/><br/><a href='#dialog' class='fancybox'><strong>Maggiori informazioni</strong></a></p>
+			<p>Una piccola dei nomi delle strade dedicati a uomini e donne a Trento<br/><br/>Maggiori informazioni <a href='#dialog' class='fancybox'><strong><u>qui</u></strong></a></p>
 		<h4>Legenda</h4>
 			<ul>
 				<li id="Uomo"><b>Uomo</b></li>
@@ -201,21 +201,26 @@ I restanti in <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</
                 var img = ""
                 var wsize = "100%";
 				if (feature.properties.img) {
-				    img = "<br><img src='" + feature.properties.img + "' width='80%'/>";
-                    var pic = new Image();
-                    pic.onload = function() {
-                        wsize = this.width;
+				    imgs = feature.properties.img.split("|");
+                    for (i=0; i<imgs.length; i++) { 
+                        img += "<br><img src='" + imgs[i] + "' width='80%'/>";
+                    	var pic = new Image();
+                    	pic.onload = function() {
+                               wsize = this.width;
+                        }	
+                    	pic.src=imgs[i];
                     }
-                    pic.src=feature.properties.img;
 				}
-                
-            
-				var content = "<div style='width=100%'><strong>" + feature.properties.name + "</strong><br/><a href='" + feature.properties.info + "' target='_new'>biografia" + "</a>";
+                var urls = feature.properties.info.split("|");
+                var content = "<div style='width=100%'><strong>" + feature.properties.name + "</strong><br/>";
+                for (i=0; i<urls.length; i++) { 
+                    content += "<a href='" + urls[i] + "' target='_new'>biografia" + "</a><br/>";
+                }
                 if (img != "") {
                     content += img;
-                }
+                }	
                 content += "</div>";
-				layer.bindPopup(content);
+			layer.bindPopup(content);
 			}
 		}
 
@@ -304,7 +309,7 @@ I restanti in <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</
 */
 var totalstreets = 895;
 var totalwomen = 46;
-var totalmen = 319;
+var totalmen = 321;
 var chart = c3.generate({
     bindto: '#viz',
     data: {
